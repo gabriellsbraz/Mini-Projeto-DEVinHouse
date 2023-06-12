@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="stylesheet" href="/styles/contato.css">
   <title>DevInFarma</title>
 </head>
 <body>
@@ -27,5 +28,33 @@
       </nav>
     </section>
   </header>
+  <section class="section-contato">
+    <h1 class="section-contato titulo">Formulário de contato</h1>
+    <form class="section-contato input" action="" method="post">
+      <label id="label" for="nome">Nome</label>
+      <input id="input" type="text" name="nome" required placeholder="Informe seu nome">
+      <br>
+      <label id="label" for="telefone">Telefone</label>
+      <input id="input"type="tel" name="telefone" required placeholder="Informe seu telefone">
+      <br>
+      <label id="label" for="telefone">E-mail</label>
+      <input id="input"type="email" name="email" required placeholder="Informe seu email">
+      <br>
+      <label id="label" for="assunto">Assunto</label>
+      <select id="select" name="assunto" required placeholder="Selecione">
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="comercial">Comercial</option>
+        <option value="duvidas">Dúvidas</option>
+        <option value="revenda">Revenda</option>
+      </select>
+      <br>
+      <label id="label" for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="  Digite sua mensagem"></textarea>
+      <br>
+      <input id="checkbox" type="checkbox"><label id="label" for="checkbox">Esta mensagem é sobre um orçamento</label>
+
+      <input id="button" type="submit" value="Enviar">
+    </form>
+  </section>
 </body>
 </html>
