@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --menu-color: #57767D;
+  --menu-font-color: #f7f7f7;
+  --menu-font-color-hover: #878A8C;
+
+  --button--busca-color: #f7f7f7;
+
+  --card-color: #C4C4C4;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+
+  background-color: var(--menu-color);
+}
+
+.section-logo {
+  height: 12rem;
+}
+
+.section-menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.section-menu .busca input {
+  padding: 0.8rem;
+  width: 25rem;
+  border: 0.1rem solid var(--button--busca-color);
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.section-menu .busca button {
+  background-color: var(--button--busca-color);
+  border: 0.1rem solid var(--button--busca-color);
+  border-radius: 0rem 2rem 2rem 0rem;
+  width: 5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.section-menu ul {
+  padding-left: 10rem; 
+  gap: 10rem;
+}
+
+.section-menu a:visited {
+  color: var(--menu-font-color);
+}
+
+.section-menu a:hover {
+  color: var(--menu-font-color-hover);
+}
+
+.section-menu a:active {
+  color: var(--menu-font-color);
+}
