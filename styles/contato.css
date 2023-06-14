@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --menu-color: #57767D;
+  --menu-font-color: #f7f7f7;
+  --menu-font-color-hover: #878A8C;
+
+  --button--busca-color: #f7f7f7;
+}
+
+.section-contato {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80rem;
+  margin-block: 1rem;
+  margin-inline: auto; 
+}
+
+.section-contato .titulo,
+.section-contato .input {
+  width: 50%;
+  font-size: 1.6rem;
+}
+
+.section-contato #input,
+.section-contato #select{
+  padding: 0.8rem;
+
+  border: 0.1rem solid #878A8C;
+  border-radius: 1rem;
+}
+
+.section-contato #label{
+  padding: 0.7rem 0;
+}
+
+.section-contato #select,
+.section-contato #mensagem{
+  padding: 1rem 0;
+}
+
+.section-contato #checkbox{ 
+  margin-inline-start: -38.5rem;
+  margin-block: 0.5rem;
+}
+
+.section-contato #button{
+  background-color: var(--menu-font-color-hover);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.section-contato #button:hover{
+  background-color: var(--menu-color);
+}
+
