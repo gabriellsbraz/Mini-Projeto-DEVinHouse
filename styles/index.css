@@ -22,6 +22,15 @@
   
 }
 
+section .carousel{
+  margin-block: 2%;
+  margin-inline: 5%;
+}
+section .carousel img{
+  height: 30vw;
+  width: 90%;
+}
+
 .section-card {
   display: flex;
   flex-wrap: wrap;
