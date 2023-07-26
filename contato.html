@@ -33,7 +33,7 @@
       </ul>
     </section>
   </header>
-  <section class="section-contato">
+  <!-- <section class="section-contato">
     <h1 class="section-contato titulo">Formulário de contato</h1>
     <form class="section-contato input" action="" method="post">
       <label id="label" for="nome">Nome</label>
@@ -60,6 +60,44 @@
 
       <input id="button" type="submit" value="Enviar">
     </form>
+  </section> -->
+
+  <section class="section-contato">
+    <div class="container">
+      <h1 class="titulo">Formulário de contato</h1>
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" required placeholder="Informe seu nome">
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" name="telefone" required placeholder="Informe seu telefone">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" required placeholder="Informe seu email">
+        </div>
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <select class="form-control" id="assunto" name="assunto" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="comercial">Comercial</option>
+            <option value="duvidas">Dúvidas</option>
+            <option value="revenda">Revenda</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="10" placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox">
+          <label class="form-check-label" for="checkbox">Esta mensagem é sobre um orçamento</label>
+        </div>
+        <button id="button" type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
