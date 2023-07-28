@@ -39,14 +39,14 @@
   font-size: 1.5rem;
 }
 
-.section-menu .busca input {
+.section-menu-busca input {
   padding: 0.8rem;
   width: 25rem;
   border: 0.1rem solid var(--button--busca-color);
   border-radius: 2rem 0rem 0rem 2rem;
 }
 
-.section-menu .busca button {
+.section-menu-busca button {
   background-color: var(--button--busca-color);
   border: 0.1rem solid var(--button--busca-color);
   border-radius: 0rem 2rem 2rem 0rem;
