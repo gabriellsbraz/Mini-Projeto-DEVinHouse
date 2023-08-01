@@ -97,15 +97,3 @@ function mostrarCards() {
 document.addEventListener('DOMContentLoaded', mostrarCards);
 
 document.addEventListener('DOMContentLoaded', mostrarCards);
-
-function criarColunaBootstrap(conteudo, tamanhoColuna) {
-  const colElemento = document.createElement('div');
-  colElemento.className = `col-${tamanhoColuna}`;
-
-  const conteudoElemento = document.createElement('p');
-  conteudoElemento.textContent = conteudo;
-
-  colElemento.appendChild(conteudoElemento);
-
-  return colElemento;
-}
