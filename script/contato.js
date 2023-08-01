@@ -21,3 +21,19 @@ const assuntos = ["Comercial", "Dúvidas", "Revenda", "Outro Assunto"];
   }
 
   adcAssunto();
+
+  function enviarForm(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const telefone = document.getElementById('telefone').value;
+    const email = document.getElementById('email').value;
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    console.log(`Mensagem enviada por: ${nome}`);
+    alert('Mensagem enviada com sucesso!');
+  }
+
+  const formContato = document.getElementById('form-contato');
+  formContato.addEventListener('submit', enviarForm);
