@@ -74,6 +74,11 @@ function criarCardMedicamento(medicamento) {
   cardElementoButton.classList = 'card-button '
   cardElementoButton.innerText = '+ Adicionar';
 
+  cardElementoButton.addEventListener('click', function(){
+    console.log('Medicamento adicionado: ', medicamento.titulo);
+    alert('Medicamento adicionado ao carrinho: ' + medicamento.titulo);
+  });
+
   cardElementoBody.appendChild(cardElementoLink);
   cardElementoLink.appendChild(cardElementoImg);
   cardElementoBody.appendChild(cardElementoTitulo);
