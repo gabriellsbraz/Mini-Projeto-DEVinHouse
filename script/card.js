@@ -56,6 +56,11 @@ function criarCardMedicamento(medicamento) {
   cardElementoLinkImg.alt = 'Ícone de coração';
   cardElementoLink.appendChild(cardElementoLinkImg);
 
+  cardElementoLinkImg.addEventListener('click', function () {
+    console.log('Medicamento favoritado:', medicamento.titulo);
+    alert('Medicamento adicionado aos favoritos: ' + medicamento.titulo);
+  });
+
 
   const cardElementoImg = document.createElement('img');
   cardElementoImg.className = 'card-imagem';
