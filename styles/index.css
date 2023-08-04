@@ -17,6 +17,12 @@
 
   --button-card-primary-color: #353432;
   --button-card-secundary-color: #4e4d4a;
+
+  --menu-color-dark-mode: #1b2223;
+  --menu-font-color-dark-mode: #f4fefd;
+  --menu-font-color-hover-dark-mode: #0ef6cc;
+  --button--busca-color-dark-mode: #f4fefd;
+  --card-color-dark-mode: #3a4f50;
 }
 
 section .carousel{
@@ -48,7 +54,7 @@ section .carousel img{
   border: #353432 solid 0.1rem;
   border-radius: 1rem;
   box-shadow: #878A8C 1rem;
-  background-color: var(--menu-font-color);
+  background-color: var(--button-card-secundary-color);
 }
 
 #heart-icon {
@@ -60,7 +66,7 @@ section .carousel img{
 .card-imagem {
   height: 20.1rem;
   width: auto;
-  background-color: var(--menu-font-color);
+  background-color: var(--button-card-secundary-color);
 }
 
 .card-title,
@@ -83,8 +89,7 @@ section .carousel img{
 }
 
 .card-button:active {
-  background-color: var(--button-card-secundary-color);
+  background-color: var(--menu-font-color-hover);
   border: 0.1rem solid var(--button-card-primary-color);
 }
-
 

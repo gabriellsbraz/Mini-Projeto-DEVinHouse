@@ -17,6 +17,16 @@
   --button--busca-color: #f7f7f7;
 
   --card-color: #C4C4C4;
+
+  /* DARK MODE */
+
+    --menu-color-dark-mode: #1b2223;
+    --menu-font-color-dark-mode: #f4fefd;
+    --menu-font-color-hover-dark-mode: #0ef6cc;
+    --button--busca-color-dark-mode: #f4fefd;
+    --card-color-dark-mode: #3a4f50;
+
+
 }
 
 .header-section {
@@ -71,3 +81,20 @@
 .section-menu a:active {
   color: var(--menu-font-color);
 }
+
+.btn-dark-mode {
+  margin-left: 10rem;
+  border: none;
+  background: var(--menu-color);
+}
+
+.dark-mode{
+  background-color: var(--menu-color-dark-mode);
+  color: var(--button--busca-color-dark-mode);
+}
+
+.dark-mode-background {
+  background-color: var(--menu-font-color-hover);
+}
+
+

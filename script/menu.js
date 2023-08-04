@@ -18,6 +18,9 @@ const headerInformacao = {
 };
 
 function adcHearder() {
+
+  const bodyElemento = document.getElementById('body');
+
   const headerElemento = document.getElementById('header');
 
   const sectionLogo = document.createElement('section');
@@ -72,6 +75,24 @@ function adcHearder() {
 
   headerElemento.appendChild(sectionLogo);
   headerElemento.appendChild(sectionMenu);
+
+  const buttonDarkMode = document.createElement('button')
+  buttonDarkMode.className = 'btn-dark-mode'
+  const imgDarkMode = document.createElement('img');
+  imgDarkMode.src = './images/icon-dark-mode.png'
+  imgDarkMode.alt = 'Dark Mode';
+  imgDarkMode.style.width = '3rem'
+
+  buttonDarkMode.appendChild(imgDarkMode);
+
+  sectionMenu.appendChild(buttonDarkMode)
+
+  buttonDarkMode.addEventListener('click', function(){
+    imgDarkMode.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
+    bodyElemento.classList.toggle('dark-mode');
+  })
+  
 }
 
 document.addEventListener('DOMContentLoaded', adcHearder);
